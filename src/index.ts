@@ -4,7 +4,6 @@ function formatString(input: string, toUpper?: boolean): string {
   }
   return input;
 }
-
 function filterByRating(
   items: { title: string; rating: number }[]
 ): { title: string; rating: number }[] {
@@ -58,8 +57,8 @@ function getMostExpensiveProduct(products: Product[]): Product | null {
     return null;
   }
   const highestPrice = Math.max(...products.map((item) => item.price));
-  const reuslt = products.find((item) => item.price === highestPrice);
-  return reuslt || null;
+  const result = products.find((item) => item.price === highestPrice);
+  return result || null;
 }
 
 enum Day {
